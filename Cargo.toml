@@ -1,0 +1,23 @@
+[package]
+name = "rust_os"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["staticlib", "rlib"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+spin = "0.7.1"
+x86_64 = "0.14.0"
+log = { version = "0.4.14", features = ["std"] }
+bootloader = { version = "0.9.23", features = ["map_physical_memory"] }
+log = "0.4.14"
+linked_list_allocator = "0.9.1"
+
+[workspace]
