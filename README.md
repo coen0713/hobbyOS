@@ -1,4 +1,4 @@
-# Rust OS
+# hobbyOS
 
 A simple 64-bit operating system kernel written in Rust.
 
